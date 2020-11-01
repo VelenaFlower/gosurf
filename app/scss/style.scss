@@ -395,10 +395,17 @@
   top: 500px;
   left: 15px;
 }
-.travel {
+.holder {
   background: url("../images/travel-bg.png") no-repeat bottom right;
+  &.sleep {
+    background: url("../images/frangipani.png") no-repeat right;
+    background-position-y: 87%;
+    .holder-slider__descr {
+      min-height: 368px;
+    }
+  }
 }
-.travel-slider {
+.holder-slider {
   &__head {
     min-height: 780px;
     background: no-repeat top left;
@@ -416,6 +423,14 @@
         top: -5px;
         right: 0;
       }
+      .holder__star-list {
+        position: absolute;
+        top: -5px;
+        right: -90px;
+        img {
+          position: static;
+        }
+      }
     }
   }
   &__subtitle {
@@ -430,16 +445,16 @@
     opacity: .25;
   }
 }
-.travel-slider__info {
+.holder-slider__info {
   display: flex;
   justify-content: space-around;
 }
-.travel-slider__info-item {
+.holder-slider__info-item {
   position: relative;
   min-height: 200px;
   margin-bottom: 66px;
 }
-.travel-slider__info-subtitle {
+.holder-slider__info-subtitle {
   font-size: 18px;
   line-height: 22px;
   text-align: right;
@@ -450,12 +465,12 @@
   top: 0;
   left: 0;
 }
-.travel-slider__info-title {
+.holder-slider__info-title {
   padding-left: 40px;
   font-weight: 800;
   font-size: 40px;
   line-height: 36px;
-  span {
+  .holder-pricing__span {
     display: block;
     font-weight: normal;
     font-size: 14px;
