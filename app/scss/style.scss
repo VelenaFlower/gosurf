@@ -639,6 +639,26 @@
     opacity: 0.5;
   }
 }
+.footer {
+  padding: 285px 0 34px;
+  text-align: center;
+  .btn {
+    span{
+      padding: 17px 17px 15px;
+      &:after {
+        display: none;
+      }
+    }
+  }
+}
+.footer__copy {
+  padding-top: 27px;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 1.05px;
+  opacity: .5;
+}
 
 
 @import "media";
