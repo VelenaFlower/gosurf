@@ -217,8 +217,9 @@ input[type=number]
   right: 30px;
 }
 .star-list {
+  margin-left: 10px;
   li {
     display: inline-block;
-    margin-right: -30px;
+    margin-left: -25px;
   }
 }
